@@ -9,6 +9,44 @@
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
     <script defer src="chatbot-ui.js"></script>
+<style id="socialin-chatbot-visibility-fallback">
+  #chatbot-toggle.chatbot-toggle {
+    display: grid !important;
+    place-items: center !important;
+    position: fixed !important;
+    right: 24px !important;
+    bottom: 24px !important;
+    width: 58px !important;
+    height: 58px !important;
+    min-width: 58px !important;
+    min-height: 58px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+    border-radius: 50% !important;
+    background: linear-gradient(135deg, #d81b60, #8e1b58) !important;
+    color: #ffffff !important;
+    font-size: 25px !important;
+    line-height: 1 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    transform: none !important;
+    clip-path: none !important;
+    z-index: 2147483647 !important;
+    box-shadow: 0 10px 28px rgba(216, 27, 96, 0.36) !important;
+  }
+
+  #chatbot-toggle.chatbot-toggle span {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  #chatbot-window.chatbot-window {
+    z-index: 2147483646 !important;
+  }
+</style>
 </head>
 <body>
 
