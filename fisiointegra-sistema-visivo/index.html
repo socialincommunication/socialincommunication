@@ -1611,6 +1611,31 @@
         padding: 38px 26px
       }
     }
+    .back-to-cases-section {
+      display: flex;
+      justify-content: center;
+      padding: 24px 20px 44px;
+    }
+
+    .back-to-cases-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 999px;
+      padding: 14px 22px;
+      transition: transform .2s ease, opacity .2s ease;
+      background-color: var(--petrolio, #0B4F5A);
+      color: var(--crema, #F7F5EF);
+      border: 1px solid var(--teal, #147C7C);
+    }
+
+    .back-to-cases-button:hover {
+      transform: translateY(-2px);
+      opacity: .92;
+    }
   </style>
 </head>
 
@@ -2611,6 +2636,13 @@
           <span class="lg" style="margin-left:auto;color:#9aabae">* valori simulati a fini didattici</span>
         </div>
       </div>
+    </section>
+
+    <section class="back-to-cases-section" aria-label="Navigazione casi studio">
+      <a class="back-to-cases-button" href="/#casi-studio">
+        <span aria-hidden="true">←</span>
+        Torna ai casi studio
+      </a>
     </section>
 
     <!-- ============ CREDITS ============ -->

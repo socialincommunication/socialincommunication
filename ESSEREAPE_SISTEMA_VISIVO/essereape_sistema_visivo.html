@@ -306,6 +306,31 @@ img{max-width:100%;display:block}
 .visual-tile{text-shadow:0 2px 4px rgba(0,0,0,0.8)}
 .visual-tile .logoarea{text-shadow:none}
 .visual-tile .mcta{background:rgba(0,0,0,0.3);text-shadow:none}
+.back-to-cases-section {
+  display: flex;
+  justify-content: center;
+  padding: 24px 20px 44px;
+}
+
+.back-to-cases-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 14px 22px;
+  transition: transform .2s ease, opacity .2s ease;
+  background-color: var(--terra, #8b5e34);
+  color: var(--crema, #f7f1e6);
+  border: 1px solid var(--miele, #e0a93b);
+}
+
+.back-to-cases-button:hover {
+  transform: translateY(-2px);
+  opacity: .92;
+}
 </style>
 </head>
 <body>
@@ -1581,6 +1606,13 @@ img{max-width:100%;display:block}
       </div>
     </div>
   </div>
+</section>
+
+<section class="back-to-cases-section" aria-label="Navigazione casi studio">
+  <a class="back-to-cases-button" href="/#casi-studio">
+    <span aria-hidden="true">←</span>
+    Torna ai casi studio
+  </a>
 </section>
 
 <!-- ===== FOOTER ===== -->
