@@ -664,5 +664,56 @@
         </div>
     </div>
 
+<script id="socialin-chatbot-recovery-script">
+window.addEventListener("load", function () {
+  window.setTimeout(function () {
+    const originalToggle = document.getElementById("chatbot-toggle");
+
+    if (!originalToggle) {
+      return;
+    }
+
+    if (document.getElementById("socialin-chatbot-recovery-toggle")) {
+      return;
+    }
+
+    originalToggle.style.setProperty("display", "none", "important");
+
+    const recoveryToggle = document.createElement("button");
+    recoveryToggle.id = "socialin-chatbot-recovery-toggle";
+    recoveryToggle.type = "button";
+    recoveryToggle.setAttribute("aria-label", "Apri assistente Socialin");
+    recoveryToggle.setAttribute("title", "Apri assistente Socialin");
+    recoveryToggle.innerHTML = "<span aria-hidden='true'>💬</span>";
+
+    recoveryToggle.style.setProperty("display", "grid", "important");
+    recoveryToggle.style.setProperty("place-items", "center", "important");
+    recoveryToggle.style.setProperty("position", "fixed", "important");
+    recoveryToggle.style.setProperty("right", "24px", "important");
+    recoveryToggle.style.setProperty("bottom", "24px", "important");
+    recoveryToggle.style.setProperty("width", "58px", "important");
+    recoveryToggle.style.setProperty("height", "58px", "important");
+    recoveryToggle.style.setProperty("padding", "0", "important");
+    recoveryToggle.style.setProperty("margin", "0", "important");
+    recoveryToggle.style.setProperty("border", "0", "important");
+    recoveryToggle.style.setProperty("border-radius", "50%", "important");
+    recoveryToggle.style.setProperty("background", "linear-gradient(135deg, #d81b60, #8e1b58)", "important");
+    recoveryToggle.style.setProperty("color", "#ffffff", "important");
+    recoveryToggle.style.setProperty("font-size", "25px", "important");
+    recoveryToggle.style.setProperty("line-height", "1", "important");
+    recoveryToggle.style.setProperty("cursor", "pointer", "important");
+    recoveryToggle.style.setProperty("visibility", "visible", "important");
+    recoveryToggle.style.setProperty("opacity", "1", "important");
+    recoveryToggle.style.setProperty("z-index", "2147483647", "important");
+    recoveryToggle.style.setProperty("box-shadow", "0 10px 28px rgba(216, 27, 96, 0.36)", "important");
+
+    recoveryToggle.addEventListener("click", function () {
+      originalToggle.click();
+    });
+
+    document.body.appendChild(recoveryToggle);
+  }, 700);
+});
+</script>
 </body>
 </html>
