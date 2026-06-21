@@ -1,3 +1,5 @@
+const SOCIALIN_CHATBOT_MODE = "local-v2";
+
 /**
  * SOCIALIN ASSISTANT - Frontend Chatbot UI
  * 

@@ -442,3 +442,12 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--b
   box-shadow: 0 0 24px rgba(215, 38, 138, 0.35);
   transform: translateY(-2px);
 }
+
+/* Fallback visibilità chatbot locale */
+#chatbot-toggle.chatbot-toggle {
+display: flex !important;
+visibility: visible !important;
+opacity: 1 !important;
+position: fixed !important;
+z-index: 2147483647 !important;
+}
