@@ -165,3 +165,34 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
+
+// Updated FAQ Logic for Accessibility
+document.addEventListener('DOMContentLoaded', () => {
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', function(e) {
+            e.stopPropagation(); // Prevent old listeners if any
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-question').forEach(q => {
+                q.setAttribute('aria-expanded', 'false');
+                q.classList.remove('active');
+                if (q.nextElementSibling) {
+                    q.nextElementSibling.style.maxHeight = null;
+                }
+            });
+
+            // Toggle current FAQ
+            if (!isExpanded) {
+                this.setAttribute('aria-expanded', 'true');
+                this.classList.add('active');
+                const answer = this.nextElementSibling;
+                if (answer) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                }
+            }
+        });
+    });
+});

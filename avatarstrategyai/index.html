@@ -1,19 +1,7 @@
 
 
 
-<section class="section bg-alt" id="ai-transparency">
-  <div class="container">
-    <div class="ai-transparency-box">
-      <h2>Tecnologia dichiarata. Direzione umana.</h2>
-      <p>ATHANASYA / ATHY è un’identità virtuale artistica sviluppata con il supporto di tecnologie di intelligenza artificiale.</p>
-      <p>Socialin utilizza l’AI come strumento di progettazione, art direction e produzione; la scelta strategica, la supervisione creativa, il controllo dei contenuti e la responsabilità comunicativa restano umani.</p>
-      <p>Ogni progetto richiede una valutazione specifica su identità, target, linguaggio, diritti sui materiali, trasparenza commerciale e contesto d’uso.</p>
-      <div class="ai-transparency-footer">
-        <p>L’avatar non sostituisce la relazione: la rende più progettata, riconoscibile e continuativa.</p>
-      </div>
-    </div>
-  </div>
-</section>
+
 
 
 <!DOCTYPE html>
@@ -21,8 +9,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avatar Strategy AI | Socialin Communication</title>
-    <meta name="description" content="Laboratorio dedicato all'identità sintetica: Avatar AI, Virtual Influencer, Digital Human e strategie senza volto per brand e creator.">
+    <title>Avatar AI, Virtual Influencer e AI Cinema | Socialin Communication</title>
+    <meta name="description" content="Avatar AI, virtual influencer, digital human, AI cinema e strategie senza volto per brand, creator e professionisti. Scopri ATHY, l’identità virtuale artistica di Socialin Communication.">
     <link rel="icon" type="image/png" href="../assets/03-logo-icona-socialin-orizzontale.png">
     <link rel="stylesheet" href="../style.css">
     <script defer src="../script.js"></script>
@@ -190,7 +178,7 @@
   color: var(--text-muted);
 }
 .athy-production-note strong {
-  color: var(--text-color);
+  color: var(--text-dark);
   display: block;
   margin-bottom: 12px;
   font-size: 0.85em;
@@ -318,7 +306,7 @@
 .ai-transparency-box p {
   margin-bottom: 15px;
   font-size: 1.05em;
-  color: var(--text-color);
+  color: var(--text-dark);
 }
 .ai-transparency-footer {
   margin-top: 30px;
@@ -327,7 +315,720 @@
   font-weight: 600;
   color: var(--brand-magenta);
 }
+
+/* Sostituzione Icone con Immagini Assets */
+.avatar-service-card-image {
+  width: 100%;
+  height: 190px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 18px;
+  margin-bottom: 22px;
+  box-shadow: 0 14px 34px rgba(215, 38, 138, 0.12);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.vertical-card:hover .avatar-service-card-image {
+  transform: scale(1.025);
+  box-shadow: 0 20px 42px rgba(215, 38, 138, 0.18);
+}
+
+@media (max-width: 768px) {
+  .avatar-service-card-image {
+    height: 205px;
+  }
+}
+
+/* Correzione Allineamento Metodo */
+#metodo-avatar .text-center {
+  max-width: 800px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+#metodo-avatar .subtitle {
+  max-width: 800px;
+  margin: 16px auto 0;
+  text-align: center;
+}
+
+/* Video Dinamico */
+.athy-video-shell--interactive {
+  position: relative;
+  cursor: pointer;
+}
+
+.athy-video-activate {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: max-content;
+  max-width: calc(100% - 32px);
+  padding: 13px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: 999px;
+  background: rgba(28, 20, 30, 0.72);
+  color: #ffffff;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+  transition: transform 0.25s ease, opacity 0.25s ease, background 0.25s ease;
+}
+
+.athy-video-activate:hover {
+  transform: translateX(-50%) translateY(-3px);
+  background: var(--brand-magenta);
+}
+
+.athy-video-shell--interactive.is-active .athy-video-activate {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.athy-video-shell--interactive.is-active {
+  cursor: default;
+}
+
+@media (max-width: 575px) {
+  .athy-video-activate {
+    bottom: 16px;
+    padding: 11px 15px;
+    font-size: 0.8rem;
+  }
+}
+
+/* ATHY Media Universe */
+.athy-media-intro {
+  margin-bottom: 50px;
+}
+.athy-media-disclaimer {
+  font-size: 0.9em;
+  color: var(--text-muted);
+  max-width: 800px;
+  margin: 20px auto 0;
+  font-style: italic;
+}
+.athy-instagram-feature {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 40px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+  margin-bottom: 30px;
+}
+.athy-instagram-profile {
+  background: var(--bg-alt);
+  border-radius: 16px;
+  padding: 20px;
+}
+.athy-platform-label {
+  display: inline-block;
+  background: var(--brand-magenta);
+  color: #fff;
+  font-size: 0.7em;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin-bottom: 25px;
+}
+.athy-profile-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.athy-profile-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--brand-magenta);
+  padding: 3px;
+  background: #fff;
+}
+.athy-profile-name {
+  font-size: 1.1em;
+  margin: 0 0 2px 0;
+  color: var(--text-dark);
+}
+.athy-profile-handle {
+  font-size: 0.9em;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+.athy-profile-bio {
+  font-size: 0.95em;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+.athy-profile-stats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  padding: 12px 0;
+}
+.stat-item {
+  font-size: 0.9em;
+  color: var(--text-muted);
+}
+.stat-item strong {
+  color: var(--text-dark);
+  font-size: 1.05em;
+  display: inline-block;
+  margin-right: 4px;
+}
+.athy-stories-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  overflow-x: auto;
+  padding-bottom: 5px;
+  scrollbar-width: none;
+}
+.athy-stories-row::-webkit-scrollbar {
+  display: none;
+}
+.athy-story-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  min-width: 65px;
+}
+.athy-story-item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: 2px;
+  background: #fff;
+}
+.athy-story-item span {
+  font-size: 0.75em;
+  color: var(--text-dark);
+  font-weight: 500;
+  white-space: nowrap;
+}
+.athy-feed-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.athy-feed-grid img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+}
+.athy-instagram-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.athy-instagram-copy .ai-transparency-kicker {
+  margin-bottom: 15px;
+}
+.athy-instagram-copy p {
+  font-size: 0.95em;
+  color: var(--text-muted);
+  margin-bottom: 15px;
+}
+.athy-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 25px 0;
+}
+.athy-feature-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  font-size: 0.95em;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+.athy-feature-list li::before {
+  content: "•";
+  color: var(--brand-magenta);
+  position: absolute;
+  left: 0;
+  font-size: 1.2em;
+  top: -2px;
+}
+.athy-profile-note {
+  font-size: 0.8em !important;
+  font-style: italic;
+  margin-bottom: 0 !important;
+  margin-top: auto;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  padding-top: 15px;
+}
+.athy-platform-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.athy-platform-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.athy-cover-wrap, .athy-post-wrap, .athy-square-wrap, .athy-poster-wrap {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.athy-cover-wrap img, .athy-post-wrap img, .athy-square-wrap img, .athy-poster-wrap img {
+  width: 100%;
+  display: block;
+}
+.athy-square-wrap img {
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+.athy-poster-wrap img {
+  aspect-ratio: 3/4;
+  object-fit: cover;
+}
+.athy-platform-card h4 {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: var(--text-dark);
+}
+.athy-platform-card p {
+  font-size: 0.9em;
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+.athy-future-app-box {
+  background: #fff;
+  border-left: 4px solid var(--brand-magenta);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  max-width: 800px;
+  margin: 0 auto;
+}
+.athy-future-app-box strong {
+  display: block;
+  font-size: 0.85em;
+  letter-spacing: 1px;
+  color: var(--text-dark);
+  margin-bottom: 15px;
+}
+.athy-future-app-box p {
+  margin-bottom: 15px;
+  color: var(--text-muted);
+}
+.athy-future-app-box p:last-child {
+  margin-bottom: 0;
+  font-weight: 600;
+  color: var(--brand-magenta);
+}
+
+@media (max-width: 991px) {
+  .athy-instagram-feature {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .athy-platform-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ATHY Art Estetologia */
+.athy-art-copy {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.athy-art-copy p {
+  font-size: 1.05em;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+.athy-art-note {
+  background: #fff;
+  border-left: 3px solid #D4AF37;
+  padding: 30px;
+  border-radius: 12px;
+  margin: 50px auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+  text-align: left;
+}
+.athy-art-note strong {
+  display: block;
+  font-size: 0.85em;
+  letter-spacing: 1.5px;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+.athy-art-note p {
+  margin-bottom: 0;
+  font-size: 0.95em;
+}
+
+/* HERO */
+.hero-avatar {
+  padding-top: clamp(8rem, 12vw, 10.5rem);
+  padding-bottom: clamp(5.5rem, 8vw, 7.5rem);
+}
+
+.hero-avatar .container {
+  transform: translateY(16px);
+}
+
+@media (max-width: 768px) {
+  .hero-avatar {
+    padding-top: 7.5rem;
+    padding-bottom: 5rem;
+  }
+
+  .hero-avatar .container {
+    transform: translateY(8px);
+  }
+}
+
+/* LARGHEZZA TESTI */
+#avatar-lab .section-header,
+#athanasya .section-header,
+#clarification .section-header {
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#avatar-lab .section-desc,
+#athanasya .section-desc,
+#clarification .section-desc {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#athanasya > .container > .text-center:not(.mt-lg) {
+  max-width: 1060px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+#athanasya > .container > .text-center:not(.mt-lg) > p {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* DUE TESTI FINALI ATHY IN DUE COLONNE ALLINEATE */
+#athanasya .text-center.mt-lg {
+  max-width: 1060px !important;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+  align-items: stretch;
+}
+
+#athanasya .text-center.mt-lg > p {
+  margin: 0 !important;
+  padding: 4px 12px;
+  text-align: center;
+  line-height: 1.65;
+}
+
+#athanasya .text-center.mt-lg > a {
+  grid-column: 1 / -1;
+  justify-self: center;
+  margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+  #athanasya .text-center.mt-lg {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  #athanasya .text-center.mt-lg > a {
+    grid-column: auto;
+  }
+}
+
+/* TESTI VISUAL SYSTEM E MEDIA UNIVERSE CENTRATI */
+#athy-visual-system .text-center,
+#athy-media-universe .athy-media-intro {
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#athy-visual-system .subtitle,
+#athy-media-universe .subtitle,
+#athy-media-universe .athy-media-disclaimer {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* APPROFONDIMENTO TESTO PROFILO INSTAGRAM ATHY */
+.athy-instagram-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.athy-instagram-copy p {
+  line-height: 1.7;
+}
+
+.athy-role-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 9px;
+  margin: 22px 0;
+}
+
+.athy-role-list span {
+  position: relative;
+  display: block;
+  padding-left: 17px;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+}
+
+.athy-role-list span::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--brand-magenta);
+  font-weight: 800;
+}
+
+.athy-profile-note {
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+/* CORREZIONE QUATTRO CARD PIATTAFORME */
+.athy-platform-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+}
+
+.athy-platform-card {
+  height: auto;
+  justify-content: flex-start;
+}
+
+.athy-platform-card h4 {
+  margin-top: 0;
+}
+
+.athy-platform-card--community .athy-cover-wrap,
+.athy-platform-card--video .athy-cover-wrap {
+  aspect-ratio: 16 / 10;
+}
+
+.athy-platform-card--community .athy-cover-wrap img,
+.athy-platform-card--video .athy-cover-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.athy-platform-card--music .athy-square-wrap {
+  aspect-ratio: 4 / 5;
+}
+
+.athy-platform-card--music .athy-square-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.athy-platform-card--cinema .athy-poster-wrap {
+  aspect-ratio: 4 / 5;
+}
+
+.athy-platform-card--cinema .athy-poster-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 575px) {
+  .athy-platform-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.athy-art-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.75fr);
+  gap: clamp(30px, 5vw, 70px);
+  align-items: center;
+  max-width: 1120px;
+  margin: 44px auto 0;
+}
+
+.athy-art-copy {
+  min-width: 0;
+}
+
+.athy-art-media {
+  display: flex;
+  justify-content: center;
+}
+
+.larmes-video-shell {
+  position: relative;
+  width: min(100%, 390px);
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+  border-radius: 24px;
+  background: #17131a;
+  box-shadow: 0 22px 60px rgba(215, 38, 138, 0.18);
+  cursor: pointer;
+}
+
+.larmes-video-player {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.larmes-video-activate {
+  position: absolute;
+  left: 50%;
+  bottom: 26px;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: max-content;
+  max-width: calc(100% - 32px);
+  padding: 12px 17px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 999px;
+  background: rgba(30, 20, 28, 0.76);
+  color: #ffffff;
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 700;
+  cursor: pointer;
+  backdrop-filter: blur(12px);
+  transition: opacity 0.25s ease, transform 0.25s ease, background 0.25s ease;
+}
+
+.larmes-video-activate:hover {
+  transform: translateX(-50%) translateY(-3px);
+  background: var(--brand-magenta);
+}
+
+.larmes-video-shell.is-active {
+  cursor: default;
+}
+
+.larmes-video-shell.is-active .larmes-video-activate {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.larmes-video-label {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  margin: 0;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--text-dark);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 850px) {
+  .athy-art-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .athy-art-media {
+    justify-content: center;
+  }
+}
+
 </style>
+
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://socialincommunication.com/avatarstrategyai/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:title" content="Avatar AI, Virtual Influencer e AI Cinema | Socialin Communication">
+    <meta property="og:description" content="Scopri ATHY e Avatar Strategy AI: virtual influencer, AI cinema, identità digitale e strategie senza volto.">
+    <meta property="og:url" content="https://socialincommunication.com/avatarstrategyai/">
+    <meta property="og:image" content="https://socialincommunication.com/assets/athy-generated-08-orizzontale.png">
+    <meta property="og:image:alt" content="ATHANASYA ATHY, identità virtuale artistica di Socialin Communication">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Avatar AI, Virtual Influencer e AI Cinema | Socialin Communication">
+    <meta name="twitter:description" content="Scopri ATHY e il metodo Avatar Strategy AI di Socialin Communication.">
+    <meta name="twitter:image" content="https://socialincommunication.com/assets/athy-generated-08-orizzontale.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Avatar Strategy AI",
+      "description": "Servizio creativo-strategico di Socialin Communication dedicato ad avatar AI, virtual influencer, digital human, AI cinema, contenuti generativi e strategie senza volto.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Socialin Communication",
+        "url": "https://socialincommunication.com/"
+      },
+      "url": "https://socialincommunication.com/avatarstrategyai/",
+      "inLanguage": "it",
+      "areaServed": "IT",
+      "serviceType": [
+        "Avatar AI",
+        "Virtual Influencer",
+        "Digital Human",
+        "AI Cinema",
+        "Strategie senza volto"
+      ]
+    }
+    </script>
 </head>
 <body>
 
@@ -373,7 +1074,7 @@
     </section>
 
     <!-- SERVIZI VERTICALI -->
-    <section class="section">
+    <section id="avatar-lab" class="section">
         <div class="container">
             <div class="section-header fade-up">
                 <h2 class="sparkle-text balanced-title">
@@ -386,37 +1087,37 @@
             <div class="services-vertical-grid fade-up" style="transition-delay: 0.2s">
                 
                 <div class="vertical-card">
-                    <div class="vertical-card-icon">✦</div>
+                    <img src="../assets/athy-generated-06-verticale.png" alt="Servizio AI" class="avatar-service-card-image" loading="lazy" decoding="async">
                     <h3>Avatar AI & Strategia senza volto</h3>
                     <p>Progettiamo volti digitali ideali per format TikTok, Reel e YouTube. Gestiamo la creazione di contenuti continuativi senza dover esporre fisicamente fondatori o dipendenti, abbattendo costi e barriere di produzione.</p>
                 </div>
                 
                 <div class="vertical-card">
-                    <div class="vertical-card-icon">✿</div>
+                    <img src="../assets/athy-generated-07-verticale.png" alt="Servizio AI" class="avatar-service-card-image" loading="lazy" decoding="async">
                     <h3>Virtual Influencer</h3>
                     <p>Creazione di personaggi digitali completi: background narrativo, estetica, tono di voce. Perfetti per brand moda, lifestyle o campagne native. L'influencer perfetto, proprietario e controllabile al 100%.</p>
                 </div>
                 
                 <div class="vertical-card">
-                    <div class="vertical-card-icon">⚲</div>
+                    <img src="../assets/athy-generated-09-verticale.png" alt="Servizio AI" class="avatar-service-card-image" loading="lazy" decoding="async">
                     <h3>Digital Human</h3>
                     <p>Volti e figure ultra-fotorealistiche animate. Sviluppiamo presenter virtuali per video aziendali, corsi di formazione, comunicazioni B2B e video sales letter (VSL) con qualità cinematografica.</p>
                 </div>
                 
                 <div class="vertical-card">
-                    <div class="vertical-card-icon">💬</div>
+                    <img src="../assets/athy-generated-12-verticale.png" alt="Servizio AI" class="avatar-service-card-image" loading="lazy" decoding="async">
                     <h3>Assistenti Virtuali & Chatbot</h3>
                     <p>Agenti AI che vivono nel tuo sito web o nei tuoi funnel. Progettati per accogliere i lead, rispondere a domande complesse e qualificare i contatti commerciali lavorando 24 ore su 24.</p>
                 </div>
                 
                 <div class="vertical-card">
-                    <div class="vertical-card-icon">⚡</div>
+                    <img src="../assets/athy-generated-13-verticale.png" alt="Servizio AI" class="avatar-service-card-image" loading="lazy" decoding="async">
                     <h3>AI UGC (User Generated Content)</h3>
                     <p>Realizzazione di contenuti recensivi e di product placement generati sinteticamente. Simuliamo le dinamiche UGC naturali per le tue campagne di advertising su Meta o TikTok.</p>
                 </div>
                 
                 <div class="vertical-card">
-                    <div class="vertical-card-icon">🎬</div>
+                    <img src="../assets/athy-generated-14-verticale.png" alt="Servizio AI" class="avatar-service-card-image" loading="lazy" decoding="async">
                     <h3>AI Cinema & Visual Storytelling</h3>
                     <p>Oltre le foto stock. Creiamo concept visivi impossibili da produrre dal vivo: storyboard avanzati, short-film, spot generativi e moodboard per elevare il posizionamento estetico del tuo brand.</p>
                 </div>
@@ -449,37 +1150,37 @@
             <div class="services-vertical-grid fade-up" style="transition-delay: 0.2s">
                 <!-- Card 1 -->
                 <div class="vertical-card avatar-feature-card hover-lift">
-                    <img src="../assets/athy-cantante-virtuale-verticale.jpg" alt="ATHY cantante virtuale" class="athy-card-image">
+                    <img src="../assets/athy-cantante-virtuale-verticale.jpg" alt="ATHY cantante virtuale" class="athy-card-image" loading="lazy" decoding="async">
                     <h3>Cantante virtuale</h3>
                     <p>ATHY interpreta il ruolo di performer digitale: una voce, un volto e un immaginario pensati per videoclip, teaser, contenuti social e narrazione musicale.</p>
                 </div>
                 <!-- Card 2 -->
                 <div class="vertical-card avatar-feature-card hover-lift" style="transition-delay: 0.1s">
-                    <img src="../assets/athy-strategia-senza-volto-verticale.jpg" alt="ATHY strategia senza volto" class="athy-card-image">
+                    <img src="../assets/athy-strategia-senza-volto-verticale.jpg" alt="ATHY strategia senza volto" class="athy-card-image" loading="lazy" decoding="async">
                     <h3>Strategia senza volto</h3>
                     <p>ATHY dimostra come un brand, un artista o un professionista possa comunicare senza esporsi direttamente, mantenendo riconoscibilità, emozione e continuità narrativa.</p>
                 </div>
                 <!-- Card 3 -->
                 <div class="vertical-card avatar-feature-card hover-lift" style="transition-delay: 0.2s">
-                    <img src="../assets/athy-brand-character-verticale.jpg" alt="ATHY brand character" class="athy-card-image">
+                    <img src="../assets/athy-brand-character-verticale.jpg" alt="ATHY brand character" class="athy-card-image" loading="lazy" decoding="async">
                     <h3>Brand character</h3>
                     <p>Un avatar può diventare personaggio, guida e volto simbolico di un progetto, rendendo più memorabile la comunicazione e più coerente il racconto del brand.</p>
                 </div>
                 <!-- Card 4 -->
                 <div class="vertical-card avatar-feature-card hover-lift" style="transition-delay: 0.3s">
-                    <img src="../assets/athy-ai-content-system-verticale.jpg" alt="ATHY AI Content System" class="athy-card-image">
+                    <img src="../assets/athy-ai-content-system-verticale.jpg" alt="ATHY AI Content System" class="athy-card-image" loading="lazy" decoding="async">
                     <h3>AI Content System</h3>
                     <p>ATHANASYA permette di generare contenuti seriali: immagini, video brevi, storytelling, teaser, reel, copertine, visual e materiali per funnel digitali.</p>
                 </div>
                 <!-- Card 5 -->
                 <div class="vertical-card avatar-feature-card hover-lift" style="transition-delay: 0.4s">
-                    <img src="../assets/athy-funnel-conversione-verticale.jpg" alt="ATHY funnel e conversione" class="athy-card-image">
+                    <img src="../assets/athy-funnel-conversione-verticale.jpg" alt="ATHY funnel e conversione" class="athy-card-image" loading="lazy" decoding="async">
                     <h3>Funnel e conversione</h3>
                     <p>L’avatar non resta solo estetica: può diventare ingresso del funnel, attivare curiosità, guidare verso una pagina servizio e trasformare attenzione in richiesta di consulenza.</p>
                 </div>
                 <!-- Card 6 -->
                 <div class="vertical-card avatar-feature-card hover-lift" style="transition-delay: 0.5s">
-                    <img src="../assets/athy-estetologia-identita-verticale.jpg" alt="ATHY estetologia e identità digitale" class="athy-card-image">
+                    <img src="../assets/athy-estetologia-identita-verticale.jpg" alt="ATHY estetologia e identità digitale" class="athy-card-image" loading="lazy" decoding="async">
                     <h3>Estetologia e identità digitale</h3>
                     <p>ATHY apre una riflessione sul confine tra vero e artificiale, corpo digitale, bellezza sintetica, fiducia e nuove forme di relazione tra persona, tecnologia e immagine.</p>
                 </div>
@@ -497,9 +1198,30 @@
 <section class="section" id="athy-video">
   <div class="container athy-video-container">
     <div class="athy-video-col-left">
-      <div class="athy-video-shell">
-        <video src="../assets/athanasya-presentazione-spoiler-canzone.mp4" poster="../assets/athy-reference-intera-verticale.png" controls playsinline preload="metadata" class="athy-video-player"></video>
-      </div>
+      <div class="athy-video-shell athy-video-shell--interactive" id="athyVideoShell">
+  <video
+    src="../assets/athanasya-presentazione-spoiler-canzone.mp4"
+    poster="../assets/athy-reference-intera-verticale.png"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="metadata"
+    class="athy-video-player"
+    id="athyVideoPlayer"
+    aria-label="Presentazione audiovisiva di ATHANASYA"
+  ></video>
+
+  <button
+    class="athy-video-activate"
+    id="athyVideoActivate"
+    type="button"
+    aria-label="Attiva la presentazione audio di ATHANASYA"
+  >
+    <span class="athy-video-activate-icon" aria-hidden="true">▶</span>
+    <span>Guarda la presentazione con audio</span>
+  </button>
+</div>
     </div>
     <div class="athy-video-col-right text-content">
       <span class="kicker">PRESENTAZIONE AUDIOVISIVA &middot; ATHANASYA / ATHY</span>
@@ -527,22 +1249,22 @@
     
     <div class="athy-visual-grid">
       <div class="athy-visual-card">
-        <div class="athy-card-img-wrap"><img src="../assets/athy-generated-02-verticale.png" alt="Character Bible"></div>
+        <div class="athy-card-img-wrap"><img src="../assets/athy-generated-02-verticale.png" alt="Character Bible" loading="lazy" decoding="async"></div>
         <h4>1. Character Bible</h4>
         <p>Volto, proporzioni, capelli, palette, espressioni, outfit e dettagli ricorrenti.</p>
       </div>
       <div class="athy-visual-card">
-        <div class="athy-card-img-wrap"><img src="../assets/athy-generated-03-verticale.png" alt="Performance e movimento"></div>
+        <div class="athy-card-img-wrap"><img src="../assets/athy-generated-03-verticale.png" alt="Performance e movimento" loading="lazy" decoding="async"></div>
         <h4>2. Performance e movimento</h4>
         <p>Pose, sguardi, mani, silhouette, azioni e micro-espressioni.</p>
       </div>
       <div class="athy-visual-card">
-        <div class="athy-card-img-wrap"><img src="../assets/athy-generated-04-verticale.png" alt="Scene e formati"></div>
+        <div class="athy-card-img-wrap"><img src="../assets/athy-generated-04-verticale.png" alt="Scene e formati" loading="lazy" decoding="async"></div>
         <h4>3. Scene e formati</h4>
         <p>Reel, teaser, cover musicali, frame cinematografici, visual editoriali e contenuti verticali.</p>
       </div>
       <div class="athy-visual-card">
-        <div class="athy-card-img-wrap"><img src="../assets/athy-generated-05-verticale.png" alt="Identità narrativa"></div>
+        <div class="athy-card-img-wrap"><img src="../assets/athy-generated-05-verticale.png" alt="Identità narrativa" loading="lazy" decoding="async"></div>
         <h4>4. Identità narrativa</h4>
         <p>Voce, universo musicale, tono, frasi manifesto e simboli visuali.</p>
       </div>
@@ -550,7 +1272,187 @@
   </div>
 </section>
 
-    <!-- CLARIFICATION SECTION -->
+
+<section class="section bg-alt" id="athy-media-universe">
+  <div class="container">
+    <div class="text-center athy-media-intro">
+      <h2>ATHY Media Universe</h2>
+      <p class="subtitle">Un’identità virtuale può vivere attraverso musica, contenuti verticali, piattaforme sociali, trailer cinematografici e narrazioni seriali.</p>
+      <p class="athy-media-disclaimer">Questi layout sono prototipi editoriali per mostrare come ATHY potrebbe articolarsi in un ecosistema digitale coerente. Non rappresentano account attivi, follower, stream, visualizzazioni, partnership o risultati già ottenuti.</p>
+    </div>
+    
+    <div class="athy-instagram-feature">
+      <div class="athy-instagram-profile">
+        <div class="athy-platform-label">PROTOTIPO PRE-LANCIO &middot; DATI NON ATTIVI</div>
+        <div class="athy-profile-header">
+          <img src="../assets/athy-ref-front-closeup-verticale.jpg" alt="Avatar Profilo" class="athy-profile-avatar" loading="lazy" decoding="async">
+          <div class="athy-profile-info">
+            <h3 class="athy-profile-name">ATHANASYA / ATHY</h3>
+            <span class="athy-profile-handle">@athy.prototype</span>
+          </div>
+        </div>
+        
+        <div class="athy-profile-bio">
+          Virtual influencer &middot; musica AI &middot; cinema performativo &middot; estetologia
+        </div>
+        
+        <div class="athy-profile-stats">
+          <div class="stat-item"><strong>12</strong> post pilota</div>
+          <div class="stat-item"><strong>&mdash;</strong> follower</div>
+          <div class="stat-item"><strong>&mdash;</strong> seguiti</div>
+        </div>
+        
+        <div class="athy-stories-row">
+          <div class="athy-story-item">
+            <img src="../assets/athy-cantante-virtuale-02-verticale.jpg" alt="Musica" loading="lazy" decoding="async">
+            <span>Musica</span>
+          </div>
+          <div class="athy-story-item">
+            <img src="../assets/athy-generated-15-verticale.png" alt="Cinema AI" loading="lazy" decoding="async">
+            <span>Cinema AI</span>
+          </div>
+          <div class="athy-story-item">
+            <img src="../assets/athy-estetologia-identita-verticale.jpg" alt="Estetologia" loading="lazy" decoding="async">
+            <span>Estetologia</span>
+          </div>
+          <div class="athy-story-item">
+            <img src="../assets/athy-generated-07-verticale.png" alt="Backstage" loading="lazy" decoding="async">
+            <span>Backstage</span>
+          </div>
+          <div class="athy-story-item">
+            <img src="../assets/athy-generated-14-verticale.png" alt="ATHY Stories" loading="lazy" decoding="async">
+            <span>ATHY Stories</span>
+          </div>
+        </div>
+        
+        <div class="athy-feed-grid">
+          <img src="../assets/athy-generated-01-verticale.png" alt="Feed post" loading="lazy" decoding="async">
+          <img src="../assets/athy-generated-02-verticale.png" alt="Feed post" loading="lazy" decoding="async">
+          <img src="../assets/athy-generated-03-verticale.png" alt="Feed post" loading="lazy" decoding="async">
+          <img src="../assets/athy-generated-04-verticale.png" alt="Feed post" loading="lazy" decoding="async">
+          <img src="../assets/athy-generated-05-verticale.png" alt="Feed post" loading="lazy" decoding="async">
+          <img src="../assets/athy-generated-08-orizzontale.png" alt="Feed post" loading="lazy" decoding="async">
+          <img src="../assets/athy-generated-10-orizzontale.png" alt="Feed post" loading="lazy" decoding="async">
+          <img src="../assets/athy-generated-11-orizzontale.png" alt="Feed post" loading="lazy" decoding="async">
+          <img src="../assets/athy-generated-13-verticale.png" alt="Feed post" loading="lazy" decoding="async">
+        </div>
+      </div>
+      
+      <div class="athy-instagram-copy">
+        <p class="ai-transparency-kicker">INFLUENCER MARKETING &middot; MUSICA &middot; CINEMA AI</p>
+        <h3 class="sparkle-text balanced-title">Una presenza digitale progettata,<br>non un profilo generico.</h3>
+<p>ATHY è un prototipo editoriale di virtual influencer italiana pensato per mostrare come un’identità AI possa creare continuità tra immagine, musica, fotografia digitale, cinema breve e contenuti per i social media.</p>
+        <p>Come cantante virtuale, ATHY può interpretare teaser, anteprime musicali e visual poem. Come attrice virtuale, può vivere in microstorie, cortometraggi verticali e scene narrative. Come modella digitale, può sostenere fashion storytelling, campagne visuali e format editoriali.</p>
+        <p>ATHY può inoltre diventare una guida visiva per creator, personal brand e Social Media Manager: non sostituisce consulenza umana, ma mostra come una direzione estetica possa trasformarsi in rubriche, feed, reel, landing page e contenuti seriali riconoscibili.</p>
+        
+        <div class="athy-role-list">
+          <span>Visual e teaser musicali</span>
+          <span>AI cinema e short-form storytelling</span>
+          <span>Fashion e modella digitale</span>
+          <span>Rubriche per creator e Social Media Manager</span>
+          <span>Funnel, landing page e contenuti seriali</span>
+        </div>
+        
+        <p class="athy-profile-note">Il mockup rappresenta una possibile architettura di profilo. Non corrisponde a un account attivo né a dati reali di follower, interazioni o performance.</p>
+      
+      </div>
+    </div>
+    
+    <div class="athy-platform-grid">
+      <!-- 1. Facebook Community -->
+      <div class="athy-platform-card athy-platform-card--community">       <div class="athy-platform-label">Prototipo community</div>
+        <div class="athy-cover-wrap"><img src="../assets/athy-generated-09-verticale.png" alt="Community Cover" loading="lazy" decoding="async"></div>
+        <h4>Facebook Community</h4>
+        <p>Spazio per dialoghi, rubriche, storytelling esteso e contenuti per una community interessata a musica, AI, arte e identità digitale.</p>
+      </div>
+
+      <!-- 2. YouTube / Visual Channel -->
+      <div class="athy-platform-card athy-platform-card--video">       <div class="athy-platform-label">Prototipo canale video</div>
+        <div class="athy-cover-wrap"><img src="../assets/athy-generated-08-orizzontale.png" alt="YouTube Thumbnail" loading="lazy" decoding="async"></div>
+        <h4>ATHY &middot; Visual Universe</h4>
+        <p>Trailer, videoclip, making-of, visual poem, scene cinematiche e materiali di processo.</p>
+      </div>
+
+      <!-- 3. Spotify / Music Identity -->
+      <div class="athy-platform-card athy-platform-card--music">       <div class="athy-platform-label">Prototipo identità musicale</div>
+        <div class="athy-square-wrap"><img src="../assets/athy-cantante-virtuale-verticale.jpg" alt="Spotify Cover" loading="lazy" decoding="async"></div>
+        <h4>ATHANASYA / ATHY &middot; Musical identity</h4>
+        <p>Cover, anteprime, tracce, immaginario sonoro e narrazione musicale.</p>
+      </div>
+
+      <!-- 4. Cinema / Short-Form Stories -->
+      <div class="athy-platform-card athy-platform-card--cinema">       <div class="athy-platform-label">Prototipo short-form cinema</div>
+        <div class="athy-poster-wrap"><img src="../assets/athy-generated-15-verticale.png" alt="Cinema Poster" loading="lazy" decoding="async"></div>
+        <h4>Cinema / Short-Form Stories</h4>
+        <p>Mini-cortometraggi verticali, storie episodiche, performance, musica e identità narrativa.</p>
+      </div>
+    </div>
+    
+    <div class="athy-future-app-box">
+      <strong>CONCEPT FUTURO &middot; PIATTAFORMA SHORT-FORM</strong>
+      <p>In una fase futura, ATHY potrebbe diventare protagonista di una piattaforma proprietaria dedicata a mini-cortometraggi verticali, storie seriali e contenuti musicali narrativi.</p>
+      <p>Il riferimento è il modello di fruizione delle app di short drama verticali. Non si tratta di un’app già attiva, di una collaborazione, di un’integrazione o di un servizio già disponibile.</p>
+      <p>ATHY Stories è un’ipotesi progettuale da validare: un possibile spazio digitale in cui musica, cinema AI e identità virtuale possano incontrarsi.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="athy-art-estetologia" style="background: #FAF8F6; padding: 100px 0;">
+  <div class="container">
+    <div class="text-center">
+      <p class="ai-transparency-kicker">ARTE &middot; ESTETOLOGIA &middot; CINEMA PERFORMATIVO</p>
+      <h2 style="margin-bottom: 30px; color: var(--text-dark);">Larmes d’Or: quando l’avatar incontra la ricerca artistica.</h2>
+  <div class="athy-art-layout">
+    <div class="athy-art-copy" style="text-align: left;">
+      <p>Avatar Strategy AI non nasce soltanto dalla tecnologia. Si collega alla ricerca estetologica di Federica Centonze su corpo, immagine, memoria, vero e artificiale.</p>
+      <p>Larmes d’Or &ndash; Il corpo come archivio del pianto / Souvenirs du Sacré &ndash; Memorie del Sacro è una ricerca visiva e simbolica sul sistema lacrimale, sulla memoria emotiva del corpo e sulla trasformazione del pianto in immagine.</p>
+      <p>Il progetto integra fotografia digitale AI, rielaborazione pittorica, immagine artistica, performance e ricerca audiovisiva. In questa prospettiva, ATHY non è soltanto un volto digitale: è una possibile figura performativa, cinematografica e narrativa.</p>
+      
+      <div class="athy-art-note">
+        <strong>MOSTRA DIDATTICA &middot; RICERCA ARTISTICA</strong>
+        <p>Larmes d’Or è stato presentato nel contesto della mostra didattica “Nascosto / Evidente” ed è stato sviluppato in dialogo con il Laboratorio MSPAZIO, dedicato al corpo sensibile, percettivo e relazionale.</p>
+      </div>
+      
+      <div style="margin-top: 50px;">
+        <h4 style="margin-bottom: 15px; font-size: 1.1em; color: var(--text-dark); letter-spacing: 1px;">CORTOMETRAGGIO PERFORMATIVO &middot; PROTOTIPO AUDIOVISIVO</h4>
+        <p>Il cortometraggio collegato a Larmes d’Or è un prototipo performativo e poetico: non è una demo commerciale, ma una sperimentazione visiva sul corpo, sulla lacrima, sulla memoria e sulla trasformazione dell’emozione in immagine.</p>
+        <p style="font-weight: 600; margin-top: 25px; color: var(--text-dark);">Questo nucleo artistico costituisce una delle radici culturali di Avatar Strategy AI: fotografia digitale, AI cinema, estetologia e storytelling non sono elementi separati, ma parti di un unico linguaggio progettuale.</p>
+      </div>
+    </div>
+    <div class="athy-art-media">
+      <div class="larmes-video-shell" id="larmesVideoShell">
+        <video
+          id="larmesVideoPlayer"
+          class="larmes-video-player"
+          src="../assets/larmesdor-verticale.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          aria-label="Larmes d'Or, prototipo audiovisivo performativo"
+        ></video>
+
+        <button
+          id="larmesVideoActivate"
+          class="larmes-video-activate"
+          type="button"
+          aria-label="Attiva l'audio del cortometraggio Larmes d'Or"
+        >
+          <span aria-hidden="true">▶</span>
+          <span>Guarda il prototipo con audio</span>
+        </button>
+
+        <p class="larmes-video-label">
+          PROTOTIPO AUDIOVISIVO ARTISTICO
+        </p>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</section>
+
     <section class="section" id="clarification">
         <div class="container">
             <div class="section-header fade-up">
@@ -568,17 +1470,17 @@
             <!-- 3 Cards -->
             <div class="services-vertical-grid fade-up">
                 <div class="vertical-card hover-lift">
-                    <div class="vertical-card-icon" style="font-size: 2rem;">👩🏻‍🎤</div>
+                    <img src="../assets/athy-ref-front-closeup-verticale.jpg" alt="Scelta strategica ATHY" class="avatar-service-card-image" loading="lazy" decoding="async">
                     <h3>ATHY come volto proprietario Socialin</h3>
                     <p>ATHY parla per l’agenzia, presenta il servizio Avatar Strategy AI, crea contenuti, sostiene il personal brand di Federica Creative e rappresenta l’identità innovativa di Socialin Communication.</p>
                 </div>
                 <div class="vertical-card hover-lift" style="transition-delay: 0.1s">
-                    <div class="vertical-card-icon" style="font-size: 2rem;">👤</div>
+                    <img src="../assets/athy-generated-15-verticale.png" alt="Scelta strategica ATHY" class="avatar-service-card-image" loading="lazy" decoding="async">
                     <h3>Avatar personalizzato per il cliente</h3>
                     <p>Ogni cliente può scegliere di costruire un proprio avatar, digital human, virtual influencer o assistente virtuale, con estetica, tono di voce, ruolo e strategia coerenti con il brand.</p>
                 </div>
                 <div class="vertical-card hover-lift" style="transition-delay: 0.2s">
-                    <div class="vertical-card-icon" style="font-size: 2rem;">🎭</div>
+                    <img src="../assets/athy-cantante-virtuale-02-verticale.jpg" alt="Scelta strategica ATHY" class="avatar-service-card-image" loading="lazy" decoding="async">
                     <h3>Strategia senza volto</h3>
                     <p>Un progetto può usare AI content creation, spot generativi, voice-over, storytelling, funnel e automazioni senza mostrare il volto del cliente e senza utilizzare ATHY come personaggio centrale.</p>
                 </div>
@@ -652,7 +1554,22 @@
 </section>
 
 
-    <!-- CTA FINALE -->
+    <section class="section bg-alt" id="ai-transparency">
+  <div class="container">
+    <div class="ai-transparency-box">
+      <p class="ai-transparency-kicker">TRASPARENZA AI &middot; IDENTITÀ DIGITALE</p>
+      <h2>Tecnologia dichiarata. Direzione umana.</h2>
+      <p>ATHANASYA / ATHY è un’identità virtuale artistica sviluppata con il supporto di tecnologie di intelligenza artificiale.</p>
+      <p>Socialin utilizza l’AI come strumento di progettazione, art direction e produzione; la scelta strategica, la supervisione creativa, il controllo dei contenuti e la responsabilità comunicativa restano umani.</p>
+      <p>Ogni progetto richiede una valutazione specifica su identità, target, linguaggio, diritti sui materiali, trasparenza commerciale e contesto d’uso.</p>
+      <div class="ai-transparency-footer">
+        <p>L’avatar non sostituisce la relazione: la rende più progettata, riconoscibile e continuativa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINALE -->
     <section class="cta-section">
         <div class="container fade-up">
             <div class="section-header">
@@ -671,7 +1588,7 @@
         <div class="container footer-content">
             <div class="footer-brand hover-lift">
                 <div class="footer-logo-box">
-                    <img src="../assets/01-logo-socialin-bianco-quadrata.png" alt="Socialin Communication Logo" class="footer-logo">
+                    <img src="../assets/01-logo-socialin-bianco-quadrata.png" alt="Socialin Communication Logo" class="footer-logo" loading="lazy" decoding="async">
                 </div>
                 <p style="color: #A0A0A8; margin-top: 1rem;">Laboratorio creativo digitale & AI Strategy</p>
             </div>
@@ -694,6 +1611,78 @@
 
 
 
+
+
+<script>
+  (function () {
+    const shell = document.getElementById('athyVideoShell');
+    const video = document.getElementById('athyVideoPlayer');
+    const activateButton = document.getElementById('athyVideoActivate');
+
+    if (!shell || !video || !activateButton) return;
+
+    function activateAthyVideo() {
+      if (shell.classList.contains('is-active')) return;
+
+      shell.classList.add('is-active');
+      video.muted = false;
+      video.loop = false;
+      video.controls = true;
+      video.currentTime = 0;
+
+      const playAttempt = video.play();
+      if (playAttempt !== undefined) {
+        playAttempt.catch(() => {
+          video.controls = true;
+        });
+      }
+    }
+
+    activateButton.addEventListener('click', function (event) {
+      event.stopPropagation();
+      activateAthyVideo();
+    });
+
+    shell.addEventListener('click', function () {
+      activateAthyVideo();
+    });
+  })();
+</script>
+
+<script>
+  (function () {
+    const shell = document.getElementById('larmesVideoShell');
+    const video = document.getElementById('larmesVideoPlayer');
+    const button = document.getElementById('larmesVideoActivate');
+
+    if (!shell || !video || !button) return;
+
+    function activateLarmesVideo() {
+      if (shell.classList.contains('is-active')) return;
+
+      shell.classList.add('is-active');
+      video.muted = false;
+      video.loop = false;
+      video.controls = true;
+      video.currentTime = 0;
+
+      const playAttempt = video.play();
+
+      if (playAttempt !== undefined) {
+        playAttempt.catch(() => {
+          video.controls = true;
+        });
+      }
+    }
+
+    button.addEventListener('click', function (event) {
+      event.stopPropagation();
+      activateLarmesVideo();
+    });
+
+    shell.addEventListener('click', activateLarmesVideo);
+  })();
+</script>
 
 </body>
 </html>
