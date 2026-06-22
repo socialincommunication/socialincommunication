@@ -1,0 +1,21 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="arrow-clip">
+      <polygon points="7,5 7,21 11.5,16.5 19,16.5" />
+    </clipPath>
+  </defs>
+  <!-- Wings -->
+  <path d="M12,11 C17,5 23,8 17,14 Z" fill="#F9F6F0" stroke="#3D2415" stroke-width="1.5" stroke-linejoin="round" />
+  <path d="M8,15 C3,20 6,26 12,20 Z" fill="#F9F6F0" stroke="#3D2415" stroke-width="1.5" stroke-linejoin="round" />
+  <!-- Body Base -->
+  <polygon points="7,5 7,21 11.5,16.5 19,16.5" fill="#E5A822" stroke="#3D2415" stroke-width="1.5" stroke-linejoin="round" />
+  <!-- Stripes inside the arrow -->
+  <g clip-path="url(#arrow-clip)">
+    <rect x="0" y="11" width="32" height="2.5" fill="#3D2415" />
+    <rect x="0" y="15.5" width="32" height="2.5" fill="#3D2415" />
+    <!-- Stinger tip -->
+    <polygon points="7,5 7,8 10,8" fill="#3D2415" />
+  </g>
+  <!-- Stroke again on top -->
+  <polygon points="7,5 7,21 11.5,16.5 19,16.5" fill="none" stroke="#3D2415" stroke-width="1.5" stroke-linejoin="round" />
+</svg>
